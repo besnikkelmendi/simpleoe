@@ -11,7 +11,7 @@ const contentStyle = {
     background: '#364d79',
 };
 
-const server = "http://localhost:8080";
+const server = "https://oeserver.herokuapp.com";
 
 function Slideshow() {
 
@@ -36,15 +36,15 @@ return(
   <Carousel autoplay>
     <div className="center">
       {/* <h3 style={contentStyle}>1</h3> */}
-      <img src={'http://localhost:8080/api/v1/image/' + keys[0]} alt="Image 1" className="center"></img>
+      <img src={server+'/api/v1/image/' + keys[0]} alt="Image 1" className="center"></img>
     </div>
     <div>
       {/* <h3 style={contentStyle}>2</h3> */}
-      <img src={'http://localhost:8080/api/v1/image/' + keys[1]} alt="Image 2" className="center"></img>
+      <img src={server+'/api/v1/image/' + keys[1]} alt="Image 2" className="center"></img>
     </div>
     <div>
       {/* <h3 style={contentStyle}>3</h3> */}
-      <img src={'http://localhost:8080/api/v1/image/' + keys[2]} alt="Image 3" className="center"></img>
+      <img src={server+'/api/v1/image/' + keys[2]} alt="Image 3" className="center"></img>
     </div>
   </Carousel>
   </>
